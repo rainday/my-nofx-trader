@@ -103,7 +103,6 @@ func TestHyperliquidPositionBuilding(t *testing.T) {
 			traderID, exchangeID, exchangeType,
 			symbol, "LONG", "open_long",
 			0.1, 3500, 0.5, 0,
-			0.1, 3500, 0.5, 0,
 			time.Now().UnixMilli(), "order-1",
 		)
 		if err != nil {
@@ -152,7 +151,6 @@ func TestHyperliquidPositionBuilding(t *testing.T) {
 		err := posBuilder.ProcessTrade(
 			traderID, exchangeID, exchangeType,
 			symbol, "SHORT", "open_short",
-			0.05, 3500, 0.25, 0,
 			0.05, 3500, 0.25, 0,
 			time.Now().UnixMilli(), "order-3",
 		)
@@ -206,7 +204,6 @@ func TestHyperliquidPositionBuilding(t *testing.T) {
 		err := posBuilder.ProcessTrade(
 			traderID, exchangeID, exchangeType,
 			symbol, "LONG", "open_long",
-			0.1, 3500, 0.5, 0,
 			0.1, 3500, 0.5, 0,
 			time.Now().UnixMilli(), "order-5",
 		)
